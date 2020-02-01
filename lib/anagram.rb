@@ -10,9 +10,8 @@ class Anagram
   @@words = ["google", "file", "game", "eilf"]
   
   def match(word)
-    word2 = word.split("").sort
     @@words.select { |word| 
-      if word.split("").sort == word2
+      if word.split("").sort == self.word.split("").sort
         word
       end
       }

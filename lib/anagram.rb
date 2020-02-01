@@ -7,10 +7,10 @@ class Anagram
     @word = word
   end 
   
-  @@words = ["google", "file", "game", "eilf"]
   
-  def match(word)
-    @@words.select { |word| 
+  
+  def match(array)
+    array.select { |word| 
       if word.split("").sort == self.word.split("").sort
         word
       end

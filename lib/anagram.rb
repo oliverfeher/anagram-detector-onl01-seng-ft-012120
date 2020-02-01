@@ -3,9 +3,10 @@ class Anagram
   
   attr_accessor :word
   
-  def initialize
-    
-  end
+  def initialize(word)
+    @word = word
+  end 
+  
   @@words = ["google", "file", "game", "eilf"]
   
   def match(word)
